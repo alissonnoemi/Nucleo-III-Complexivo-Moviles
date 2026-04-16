@@ -1,5 +1,6 @@
 import { Button, FlatList, Image, Modal, StyleSheet, Switch, Text, TouchableOpacity, View } from 'react-native'
 import React, { useState } from 'react'
+import Positivo from './Positivo'
 
 export default function TarjetaComponent({ datos }: any) {
 
@@ -23,7 +24,7 @@ export default function TarjetaComponent({ datos }: any) {
 
                 {
                     positivo == true 
-                    ? <Text> Comentarios Positivos </Text>
+                    ? <Positivo comentarios={datos.opiniones.opiniones_positivas.detalles} />
                     : <FlatList 
                         data={datos.opiniones.opiniones_negativas.detalles}
                         renderItem={({ item }) => <Text>{item.opinion}</Text>}

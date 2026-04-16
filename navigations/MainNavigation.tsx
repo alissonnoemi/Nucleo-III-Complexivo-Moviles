@@ -8,6 +8,7 @@ import GuardarScreen from '../screens/GuardarScreen';
 import ListaScreen from '../screens/ListaScreen';
 import NotasScreen from '../screens/NotasScreen';
 import { NavigationContainer } from '@react-navigation/native';
+import InformacionScreen from '../screens/InformacionScreen';
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -28,6 +29,7 @@ function MyDrawer() {
             <Drawer.Screen name="Guardar" component={GuardarScreen} />
             <Drawer.Screen name="Peliculas" component={ListaScreen} />
             <Drawer.Screen name="Notas" component={NotasScreen} />
+            <Drawer.Screen name="Informacion" component={InformacionScreen} />
         </Drawer.Navigator>
     );
 }
