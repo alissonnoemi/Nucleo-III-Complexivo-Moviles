@@ -7,7 +7,7 @@ export default function Positivo( props :any) {
             <FlatList 
                 data={props.comentarios}
                 renderItem={({item}) => 
-                <Text>{item}</Text>}
+                <Text>{item.opinion}</Text>}
 
             
             />
